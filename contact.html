@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="">
+    <meta name="description" content="Contactez la Clinique Dentaire Dr. Dupont pour toute question ou demande.">
+    <meta name="keywords" content="contact, clinique dentaire, Dr. Dupont">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Contactez-nous - Clinique Dentaire Dr. Dupont"/>
+    <meta property="og:description" content="Nous sommes là pour répondre à vos questions."/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:image:secure_url" content=""/>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./css/dark-root-styles.css">
+
+    <title>Contactez la Clinique Dentaire Dr. Dupont</title>
+</head>
+<body>
+
+    <a class="skip" aria-label="passer au contenu principal" href="#main">Cliquez pour passer au contenu principal</a>
+
+    <header>
+
+        <!-- Barre de navigation mobile -->
+        <div class="mobile-wrapper">
+            <div class="mobile-nav container mobile-nav-container">
+                <img style="height: 150px; width: 150px;" class="light" id="mobile-logo" src="./images/doctor_green.png" alt="logo_mobile_clinique" width="110" height="32">
+                <img style="height: 150px; width: 150px;" class="dark" id="mobile-logo" src="./images/doctor_light.png" alt="logo_mobile_clinique" width="110" height="32">
+                <button aria-label="ouvrir le menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
+                    <span aria-hidden="true" class="hamburger-box">
+                        <span aria-hidden="true" class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <div class="navbar-menu">
+                <div id="side-menu" class=" side-nav">
+                    <a class="nav-logo" href="./index.html">
+                        <img style="height: 250px; width: 250px;" class="light" src="images/doctor_green.png" alt="logo clinique" height="80">
+                        <img style="height: 250px; width: 250px;" class="dark" src="images/doctor_light.png" alt="logo clinique" height="80">
+                    </a>
+                    <ul id="on-top" class="navbar-links">
+                        <li class="nav-li"><a id="active-menu" href="index.html">Accueil</a></li>
+                        <li class="nav-li"><a class="link" href="./about.html">À propos</a></li>
+                        <li class="nav-li"><a class="link" href="index.html#services">Services</a></li>
+                        <li class="nav-li"><a class="link" href="./testimonials.html">Témoignages</a></li>
+                        <li class="nav-li"><a class="link" href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <button class="dark-mode-button top-dark-mode-button" aria-label="basculer en mode sombre">
+                    <img class="moon" src="./images/moon.svg" alt="" width="24" height="24">
+                    <img class="sun" src="./images/sun.svg" alt="" width="24" height="24">
+                </button>
+            </div>
+        </nav>
+    </header>
+        
+    <main id="main">
+    
+        <!-- ============================================ -->
+        <!--                    Landing                   -->
+        <!-- ============================================ -->
+    
+        <section id="int-hero">
+            <h1 id="home-h">Contactez la Clinique Dentaire</h1>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                    FORM                      -->
+        <!-- ============================================ -->
+
+        <section id="form">
+            <div class="left-section">
+                <span class="topper">Clinique Dentaire Dr. Dupont</span>
+                <h2>Envoyez un Message</h2>
+                <p>Si vous avez des questions ou des préoccupations, n'hésitez pas à nous contacter. Nous répondons à chaque appel et e-mail.</p>
+                <form id="contact" name="Contact Form" method="post" data-netlify-recaptcha="true" data-netlify="true">
+                    <div class="input-group">
+                        <label for="name">Nom Complet</label>
+                        <input id="name" aria-label="nom" class="input1" name="name" placeholder="Nom Complet" type="text" tabindex="1" required>
+                        <div aria-hidden="true" class="hover-box"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input id="email" aria-label="email" class="input1 right" name="email" placeholder="Adresse Email" type="email" tabindex="2" required>
+                        <div aria-hidden="true" class="hover-box"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Téléphone</label>
+                        <input id="phone" aria-label="numéro de téléphone" class="input1" name="phone" placeholder="Numéro de Téléphone" type="tel" tabindex="3" required>
+                        <div aria-hidden="true" class="hover-box"></div>
+                    </div>
+                    <div class="input-group">
+                        <label for="location">Localisation</label>
+                        <input id="location" aria-label="localisation" class="input1 right" name="location" placeholder="Votre Localisation" type="text" tabindex="4" required>
+                        <div aria-hidden="true" class="hover-box"></div>
+                    </div>
+                    <div class="input-group">
+                        <label for="how">Comment avez-vous entendu parler de nous</label>
+                        <input id="how" aria-label="comment avez-vous entendu parler de nous" name="hear" placeholder="Comment Avez-Vous Entendu Parler De Nous" type="text" tabindex="5" required>
+                        <div aria-hidden="true" class="hover-box"></div>
+                    </div>
+                    <div class="input-group textarea">
+                        <label for="message">Message</label>
+                        <textarea id="message" aria-label="écrivez votre message" name="message" placeholder="Dites-nous de quoi vous avez besoin" tabindex="6" required></textarea>
+                        <div aria-hidden="true" class="hover-box"></div>
+                    </div>
+                    <p class="form-submit">
+                        <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Envoi en cours">Soumettre</button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-right">
+                <div class="info-group">
+                    <span class="heading">Localisation</span>
+                    <span class="info">Casablanca, MA</span>
+                </div>
+                <div class="info-group">
+                    <span class="heading">Téléphone</span>
+                    <a class="info" href="tel:555-213-9120">(555) 213-9120</a>
+                </div>
+                <div class="info-group">
+                    <span class="heading">Email</span>
+                    <a class="info" href="mailto:info@clinique.com">info@clinique.com</a>
+                </div>
+                <div class="info-group">
+                    <span class="heading">Horaires</span>
+                    <span class="info last">Lun à Sam : 9h à 19h</span>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- ============================================ -->
+    <!--                     FOOTER                   -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="left-section">
+                <a class="logo" href="./index.html"><img src="./images/doctor_light.png" alt="logo clinique" width="293" height="91"></a>
+                <p>
+                    À la Clinique Dentaire du Dr. Dupont, nous nous engageons à offrir des soins personnalisés et de qualité pour tous vos besoins dentaires.
+                </p>
+            </div>
+            <div class="right-section">
+                <div class="lists">
+                    <ul>
+                        <li><h2>Clinique</h2></li>
+                        <li><a href="./index.html">Accueil</a></li>
+                        <li><a href="./about.html">À propos</a></li>
+                        <li><a href="./contact.html">Services</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2>Support</h2></li>
+                        <li><a href="./contact.html">Nous contacter</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2>Contactez-nous</h2></li>
+                        <li><img src="./images/pin.svg" alt="" width="24" height="24"><a href="" target="_blank">Paris, France</a></li>
+                        <li><img src="./images/footer-phone.svg" alt="" width="24" height="24"><a href="tel:01-23-45-67-89">01 23 45 67 89</a></li>
+                        <li><img src="./images/email.svg" alt="" width="24" height="24"><a href="mailto:contact@clinique-dentaire.fr">contact@clinique-dentaire.fr</a></li>
+                    </ul>
+                </div>
+    
+                <div class="buttons">
+                    <a class="button-solid" href="./contact.html">
+                        Prenez rendez-vous
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var ba = ["MSIE","Trident","Edge"];
+        var b, ua = navigator.userAgent;
+        for(var i=0; i < ba.length; i++){
+            if( ua.indexOf(ba[i]) > -1 ){
+                b = ba[i];
+                break;
+            }
+        }
+        if(b == "MSIE" || b == "Trident" || b == "Edge"){
+            b = "Internet Explorer";
+            alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
+        }
+    </script>
+
+    <script defer src="./app.js"></script>
+</body>
+</html>
